@@ -34,6 +34,7 @@ public class TempController {
 	public String showEnter(ModelMap model){
 		return "enter";
 	}
+
 	@RequestMapping(value="/enter", method = RequestMethod.POST)
 	public String postEnter(ModelMap model, @RequestParam String city, @RequestParam String temp){
 		try {
