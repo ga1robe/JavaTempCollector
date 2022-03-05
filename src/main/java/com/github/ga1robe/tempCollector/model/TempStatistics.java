@@ -1,7 +1,6 @@
 package com.github.ga1robe.tempCollector.model;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,29 +20,17 @@ public class TempStatistics {
         this.city = city;
     }
 
-    public void apply(TempRecord record) {
-        //add record
-        this.records.add(record);
-        //recalculate statistics
-        this.avgTemp = this.records.stream().mapToInt(TempRecord::getTemp).average().orElse(Double.NaN);
-        this.avgTempNight = this.records.stream().filter(r -> isNight(r)).mapToInt(TempRecord::getTemp).average().orElse(Double.NaN);
-        this.avgTempDay = this.records.stream().filter(r -> isDay(r)).mapToInt(TempRecord::getTemp).average().orElse(Double.NaN);
-    }
-
-    private static boolean isNight(TempRecord record) {
-        LocalTime time = record.getTime();
-        return time.isBefore(LocalTime.of(5, 0)) || time.isAfter(LocalTime.of(20,0));
-    }
-
-    private static boolean isDay(TempRecord record) {
-        LocalTime time = record.getTime();
-        return time.isAfter(LocalTime.of(6,0)) && time.isBefore(LocalTime.of(19, 0));
-    }
-
     public String toString() {
         return "Stat for:%s city:%s (all:%.2f,day:%.2f,night:%.2f)".formatted(this.date,this.city,this.avgTemp,this.avgTempDay,this.avgTempNight);
     }
 
+    public List<TempRecord> getRecords() {
+        return this.records;
+    }
+
+    public void setRecords(List<TempRecord> records) {
+        this.records = records;
+    }
 
     public LocalDate getDate() {
         return this.date;

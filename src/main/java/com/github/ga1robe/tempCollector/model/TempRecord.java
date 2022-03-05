@@ -7,9 +7,9 @@ public class TempRecord {
     private LocalDate date;
     private LocalTime time;
     private String city;
-    private int temp;
+    private double temp;
 
-    public TempRecord(LocalDate date,LocalTime time,String city,int temp) {
+    public TempRecord(LocalDate date,LocalTime time,String city,double temp) {
         this.date = date;
         this.time = time;
         this.city = city;
@@ -40,11 +40,11 @@ public class TempRecord {
         this.city = city;
     }
 
-    public int getTemp() {
+    public double getTemp() {
         return this.temp;
     }
 
-    public void setTemp(int temp) {
+    public void setTemp(double temp) {
         this.temp = temp;
     }
 
