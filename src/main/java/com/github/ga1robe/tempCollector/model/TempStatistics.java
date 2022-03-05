@@ -21,7 +21,7 @@ public class TempStatistics {
     }
 
     public String toString() {
-        return "Stat for:%s city:%s (all:%.2f,day:%.2f,night:%.2f)".formatted(this.date,this.city,this.avgTemp,this.avgTempDay,this.avgTempNight);
+        return String.format("Stat for: %s city: %s (all: %.2f, day: %.2f, night: %.2f)",this.date,this.city,this.avgTemp,this.avgTempDay,this.avgTempNight);
     }
 
     public List<TempRecord> getRecords() {
