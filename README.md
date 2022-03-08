@@ -27,4 +27,7 @@ Temperaturę zaokrąglamy do pełnych stopni.
 
 ### Opis formatek
 
-* TODO. Dodanie screenshot z testów REST API.
+W katalogu 'screenshots/' znajdują się dwa zrzuty ekranu,
+powiązane z dwoma stronami JSP.
+Obraz 'screen_of_enter.png' odnosi się do 'webapp/WEB-INF/jsp/enter.jsp'.
+Obraz 'screen_of_list.png' odnosi się do 'webapp/WEB-INF/jsp/list.jsp'.
