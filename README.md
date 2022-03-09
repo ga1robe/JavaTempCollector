@@ -35,6 +35,3 @@ z zestawieniem temperatur śrenich dobowych, dziennych nocnych.
 ![Ekran prezentacji temperatur-wprowadzenie](https://raw.githubusercontent.com/ga1robe/JavaTempCollector/master/screenshots/screen_of_enter.png)
 
 ![Ekran prezentacji temperatur-lista](https://raw.githubusercontent.com/ga1robe/JavaTempCollector/master/screenshots/screen_of_list.png)
-
-Obraz 'screen_of_enter.png' odnosi się do 'webapp/WEB-INF/jsp/enter.jsp'.
-Obraz 'screen_of_list.png' odnosi się do 'webapp/WEB-INF/jsp/list.jsp'.
