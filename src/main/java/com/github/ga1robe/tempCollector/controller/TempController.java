@@ -41,7 +41,7 @@ public class TempController {
 			if (city.isEmpty()) {
 				throw new IllegalArgumentException("Missing city parameter");
 			} 
-			TempRecord record = new TempRecord(LocalDate.now(), LocalTime.now(), city, Double.parseDouble(temp));
+			TempRecord record = new TempRecord(null, LocalDate.now(), LocalTime.now(), city, Double.parseDouble(temp));
 			service.addRecord(record);
 			model.put("success","Dane wprowadzone");
 		} catch (NumberFormatException e) {
