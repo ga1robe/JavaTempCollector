@@ -29,16 +29,16 @@ public class TempService {
     @PostConstruct
     public void addSampleData() {
         System.out.println("Adding sample data on startup");
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(5, 30), "Warszawa", 30));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(5, 30),"Warszawa",30));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(12, 0),"Warszawa",32));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(23, 0),"Warszawa",10));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(3, 0),"Warszawa",11));
+        addRecord(new TempRecord(0L, LocalDate.now(),LocalTime.of(5, 30), "Warszawa", 30));
+        addRecord(new TempRecord(1L, LocalDate.now(),LocalTime.of(5, 30),"Warszawa",30));
+        addRecord(new TempRecord(2L, LocalDate.now(),LocalTime.of(12, 0),"Warszawa",32));
+        addRecord(new TempRecord(3L, LocalDate.now(),LocalTime.of(23, 0),"Warszawa",10));
+        addRecord(new TempRecord(4L, LocalDate.now(),LocalTime.of(3, 0),"Warszawa",11));
 
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(8, 0),"Poznań",33));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(10, 0),"Poznań",43));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(23, 59),"Poznań",12));
-        addRecord(new TempRecord(null, LocalDate.now(),LocalTime.of(5, 0),"Poznań",12));
+        addRecord(new TempRecord(5L, LocalDate.now(),LocalTime.of(8, 0),"Poznań",33));
+        addRecord(new TempRecord(6L, LocalDate.now(),LocalTime.of(10, 0),"Poznań",43));
+        addRecord(new TempRecord(7L, LocalDate.now(),LocalTime.of(23, 59),"Poznań",12));
+        addRecord(new TempRecord(8L, LocalDate.now(),LocalTime.of(5, 0),"Poznań",12));
     }
 
     public TempStatistics getCountryStatistics(LocalDate date) {
