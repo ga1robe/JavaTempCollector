@@ -34,13 +34,6 @@ public class TempRecord {
     @NotNull
     private double temp;
 
-//    public TempRecord(LocalDate date,LocalTime time,String city,double temp) {
-//        this.date = date;
-//        this.time = time;
-//        this.city = city;
-//        this.temp = temp;
-//    }
-
     public LocalDate getDate() {
         return this.date;
     }

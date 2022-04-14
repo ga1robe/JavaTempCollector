@@ -30,7 +30,7 @@ public class TempService {
     public void addSampleData() {
         System.out.println("Adding sample data on startup");
         addRecord(new TempRecord(0L, LocalDate.now(),LocalTime.of(5, 30), "Warszawa", 30));
-        addRecord(new TempRecord(1L, LocalDate.now(),LocalTime.of(5, 30),"Warszawa",30));
+        addRecord(new TempRecord(1L, LocalDate.now(),LocalTime.of(5, 32),"Warszawa",30));
         addRecord(new TempRecord(2L, LocalDate.now(),LocalTime.of(12, 0),"Warszawa",32));
         addRecord(new TempRecord(3L, LocalDate.now(),LocalTime.of(23, 0),"Warszawa",10));
         addRecord(new TempRecord(4L, LocalDate.now(),LocalTime.of(3, 0),"Warszawa",11));
@@ -39,6 +39,12 @@ public class TempService {
         addRecord(new TempRecord(6L, LocalDate.now(),LocalTime.of(10, 0),"Poznań",43));
         addRecord(new TempRecord(7L, LocalDate.now(),LocalTime.of(23, 59),"Poznań",12));
         addRecord(new TempRecord(8L, LocalDate.now(),LocalTime.of(5, 0),"Poznań",12));
+
+        addRecord(new TempRecord(9L, LocalDate.now(),LocalTime.of(5, 34), "Kraków", 28));
+        addRecord(new TempRecord(10L, LocalDate.now(),LocalTime.of(5, 40),"Kraków",31));
+        addRecord(new TempRecord(11L, LocalDate.now(),LocalTime.of(13, 10),"Kraków",32));
+        addRecord(new TempRecord(12L, LocalDate.now(),LocalTime.of(22, 58),"Kraków",8));
+        addRecord(new TempRecord(13L, LocalDate.now(),LocalTime.of(4, 10),"Kraków",10));
     }
 
     public TempStatistics getCountryStatistics(LocalDate date) {
