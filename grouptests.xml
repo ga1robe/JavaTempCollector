@@ -1,0 +1,17 @@
+<suite name="TestSuite">
+    <test name="TempCollectorAppPage" preserve-order="true">
+        <groups>
+            <define name="test Temp Collection">
+                <include name="Warszawa" />
+                <include name="Chorzów" />
+            </define>
+            <run>
+                <include name="test Temp Collection" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.github.ga1robe.tempCollector.TempCollectorApplicationGroupTests">
+            </class>
+        </classes>
+    </test>
+</suite>
